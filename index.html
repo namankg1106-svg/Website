@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Momo ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <audio id="bgMusic" src="perfect.mp3" loop preload="auto" autoplay></audio>
+    <button class="music-toggle" id="musicToggle" aria-label="Mute music">♪</button>
+    <section class="intro" id="intro">
+      <div class="badge"><span>♥</span> MADE WITH SO MUCH LOVE</div>
+      <h1>Huiui Cutieee</h1>
+      <p class="subtitle">happy birthday buvuuu!! <span>♡</span></p>
+      <div class="floating-puppy" aria-hidden="true">🐶</div>
+      <div class="flower flower-one">✿</div><div class="flower flower-two">✿</div>
+      <div class="flower flower-three">✿</div><div class="flower flower-four">✿</div>
+      <div class="flower flower-five">✿</div><div class="flower flower-six">✿</div>
+      <button class="envelope-wrap" id="openLetter" aria-label="Open your birthday letter">
+        <span class="hint">tap to open your letter</span>
+        <span class="envelope" id="envelope">
+          <span class="envelope-back"></span>
+          <span class="letter">
+            <span class="letter-heart">♥</span>
+            <strong>To my favorite person,</strong>
+            <span class="letter-copy">You make ordinary days feel magical. I hope your birthday is as sweet, beautiful, and special as you are. Never forget how loved you are. 💗</span>
+            <span class="letter-sign">with all my love, always ♡</span>
+          </span>
+          <span class="envelope-front"></span><span class="flap"></span><span class="seal">♥</span>
+        </span>
+      </button>
+      <p class="footer-note">a little surprise, just for you ♡</p>
+      <img class="sticker i1" src="stickers/st1.png" alt="" aria-hidden="true">
+      <img class="sticker i2" src="stickers/st7.png" alt="" aria-hidden="true">
+      <img class="sticker i3" src="stickers/st11.png" alt="" aria-hidden="true">
+      <img class="sticker i4" src="stickers/st12.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="birthday-page" id="birthdayPage" aria-hidden="true">
+      <div class="page-flower pf1">✿</div><div class="page-flower pf2">✿</div><div class="page-flower pf3">✿</div>
+      <div class="cat-badge"><span>🐱</span><i>♥</i></div>
+      <div class="tiny-label"><span>♥</span> HEHEHEE</div>
+      <h2>Happy Birthday</h2>
+      <p class="name-line">My Madam Ji <span>♡</span></p>
+      <div class="divider">· · · · · · · · · ✿ · · · · · · · · ·</div>
+      <p class="birthday-message">Today is yours. A whole garden of wishes, for every laugh we've shared, every silly moment, and every reason you make the world brighter.</p> 
+      <p> HAPPY BIRTHDAYYYYY CUTIEEEEE💐🎂</p>
+      <!-- <p class="song-caption">i picked this one, because it always reminds me of you.</p> -->
+      <button class="album-button" id="albumButton">SEE OUR ALBUM</button>
+      <div class="album-message" id="albumMessage">Our favorite memories belong here ♡<br><small>Add your photos to turn this into your own little album.</small></div>
+      <button class="back-button" id="backButton">↶ back to the envelope</button>
+      <img class="sticker b1" src="stickers/st2.png" alt="" aria-hidden="true">
+      <img class="sticker b2" src="stickers/st4.png" alt="" aria-hidden="true">
+      <img class="sticker b3" src="stickers/st3.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="album-page" id="albumPage" aria-hidden="true">
+      <div class="album-label"><span>♥</span> OUR ALBUM</div>
+      <h2>Some cool album for you</h2>
+      <p class="album-subtitle">a few of my favourite moments with you ♡</p>
+      <div class="memory-card" id="memoryCard">
+        <div class="memory-art" id="memoryArt">
+          <div class="memory-topline" id="memoryTopline">for you!</div>
+          <div class="memory-illustration" id="memoryIllustration">💐 🐱</div>
+          <div class="memory-title" id="memoryTitle">HAPPY BIRTHDAY Betuuu</div>
+          <div class="memory-rule"></div>
+          <div class="memory-count" id="memoryCount">MEMORY 01 / 03</div>
+          <p class="memory-caption" id="memoryCaption">the way you smile makes every day brighter.</p>
+        </div>
+        <button class="memory-nav prev" id="memoryPrev" aria-label="Previous memory">←</button>
+        <button class="memory-nav next" id="memoryNext" aria-label="Next memory">→</button>
+      </div>
+      <div class="album-dots" id="albumDots"><span class="active"></span><span></span><span></span></div>
+      <button class="memories-continue" id="memoriesContinue">OPEN OUR MEMORIES ♡</button>
+      <button class="back-button album-back" id="albumBack">↶ back to birthday page</button>
+      <img class="sticker a1" src="stickers/st6.png" alt="" aria-hidden="true">
+      <img class="sticker a2" src="stickers/st8.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="memories-page" id="memoriesPage" aria-hidden="true">
+      <div class="album-label"><span>♥</span> LITTLE MOMENTS, BIG LOVE</div>
+      <h2>Every memory with you</h2>
+      <p class="album-subtitle"> a little shower of love ♡</p>
+      <div class="media-grid">
+        <div class="media-slot video-slot has-media"><video src="videos/video1.mp4" autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture></video></div>
+        <div class="media-slot video-slot has-media"><video src="videos/video2.mp4" autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture></video></div>
+        <div class="media-slot video-slot has-media"><video src="videos/video3.mp4" autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture></video></div>
+        <div class="media-slot video-slot has-media"><video src="videos/video4.mp4" autoplay loop muted playsinline webkit-playsinline preload="auto" disablepictureinpicture></video></div>
+      </div>
+      <button class="shower-button" id="showerButton">MAKE IT RAIN MEMORIES ✨</button>
+      <p class="shower-hint">Let the memories fall ♡</p>
+      <div class="photo-shower" id="photoShower" aria-hidden="true"></div>
+      <div class="wish-prompt" id="wishPrompt"><button class="shower-button wish-open" id="wishOpen">PICK A WISH ✨</button></div>
+      <button class="back-button memories-back" id="memoriesBack">↶ back to album</button>
+      <img class="sticker m1" src="stickers/st13.png" alt="" aria-hidden="true">
+      <img class="sticker m2" src="stickers/st14.png" alt="" aria-hidden="true">
+      <img class="sticker m3" src="stickers/st15.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="wishes-page" id="wishesPage" aria-hidden="true">
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+        <symbol id="dBow" viewBox="0 0 60 42"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 20C22 5 4 3 4 14c0 12 17 14 26 6z"/><path d="M30 20C38 5 56 3 56 14c0 12-17 14-26 6z"/><circle cx="30" cy="20" r="3.6"/><path d="M28 23c-3 7-8 12-15 16M32 23c3 7 8 12 15 16"/></g></symbol>
+        <symbol id="dHeart" viewBox="0 0 24 22"><path d="M12 20C2 12 1 4 7 3c3-.5 5 1.5 5 3 0-1.5 2-3.5 5-3 6 1 5 9-5 17z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+        <symbol id="dSpark" viewBox="0 0 24 24"><path d="M12 1C12 8 16 12 23 12 16 12 12 16 12 23 12 16 8 12 1 12 8 12 12 8 12 1z" fill="currentColor"/></symbol>
+      </defs></svg>
+      <div class="wish-doodles" aria-hidden="true">
+        <svg class="dd bow d1"><use href="#dBow"/></svg>
+        <svg class="dd bow d2"><use href="#dBow"/></svg>
+        <svg class="dd heart d3"><use href="#dHeart"/></svg>
+        <svg class="dd heart d4"><use href="#dHeart"/></svg>
+        <svg class="dd heart d5"><use href="#dHeart"/></svg>
+        <svg class="dd spark d6"><use href="#dSpark"/></svg>
+        <svg class="dd spark d7"><use href="#dSpark"/></svg>
+        <svg class="dd spark d8"><use href="#dSpark"/></svg>
+        <svg class="dd spark d9"><use href="#dSpark"/></svg>
+      </div>
+      <div class="album-label"><span>♥</span> THREE WISHES</div>
+      <h2>three little wishes</h2>
+      <p class="album-subtitle">pick a photo — a little wish is hiding behind each one ♡</p>
+      <div class="wish-cards" id="wishCards">
+        <div class="wish-slot">
+          <div class="wish-card" role="button" tabindex="0" aria-label="Pick wish one">
+            <div class="wish-face wish-front"><div class="wish-photo"><img src="wishes/wish1.jpg" alt="A little you"><i class="fl f1">✿</i><i class="fl f2">❀</i><i class="fl f3">✾</i><i class="fl f4">✿</i><i class="fl f5">❀</i><i class="fl f6">✿</i></div><span class="wish-pick">tap to pick<br>a wish ♡</span></div>
+            <div class="wish-face wish-back"><div class="note-pin">♥</div><p class="wish-note">May the universe surprise you with everything you've been wishing for.</p><div class="note-doodle">♡</div></div>
+          </div>
+        </div>
+        <div class="wish-slot">
+          <div class="wish-card" role="button" tabindex="0" aria-label="Pick wish two">
+            <div class="wish-face wish-front"><div class="wish-photo"><img src="wishes/wish2.jpg" alt="A little you"><i class="fl f1">✿</i><i class="fl f2">❀</i><i class="fl f3">✾</i><i class="fl f4">✿</i><i class="fl f5">❀</i><i class="fl f6">✿</i></div><span class="wish-pick">tap to pick<br>a wish ♡</span></div>
+            <div class="wish-face wish-back"><div class="note-pin">♥</div><p class="wish-note">I wish life gives you back all the happiness you give to others.</p><div class="note-doodle">☆</div></div>
+          </div>
+        </div>
+        <div class="wish-slot">
+          <div class="wish-card" role="button" tabindex="0" aria-label="Pick wish three">
+            <div class="wish-face wish-front"><div class="wish-photo"><img src="wishes/wish3.jpg" alt="A little you"><i class="fl f1">✿</i><i class="fl f2">❀</i><i class="fl f3">✾</i><i class="fl f4">✿</i><i class="fl f5">❀</i><i class="fl f6">✿</i></div><span class="wish-pick">tap to pick<br>a wish ♡</span></div>
+            <div class="wish-face wish-back"><div class="note-pin">♥</div><p class="wish-note">I wish that no matter where life takes you, you always find your way to happiness.</p><div class="note-doodle">♡</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="wish-stickers" aria-label="Cute photo stickers">
+        <img src="stickers/wish-sticker1.png" alt="Sticker of you in a pink top and skirt">
+        <img src="stickers/wish-sticker2.png" alt="Sticker of you in a yellow Brazil shirt and jeans">
+        <img src="stickers/wish-sticker3.png" alt="Sticker of you in a red top and white skirt">
+        <img src="stickers/wish-sticker4.png" alt="Sticker of you in a white top and dark jeans">
+      </div>
+      <div class="wishes-actions">
+        <button class="back-button wishes-back" id="wishesBack">↶ back to memories</button>
+        <button class="secret-letter-link" id="secretLetterLink">ONE LAST THING… ♡</button>
+      </div>
+    </section>
+
+    <div class="pw-gate" id="pwGate" hidden>
+      <div class="pw-card" id="pwCard" role="dialog" aria-labelledby="pwTitle">
+        <div class="pw-lock">🔒</div>
+        <h3 id="pwTitle">Secret letter</h3>
+        <p class="pw-msg">Not everyone can open this… byeee guyzzz 👋😜<br><small>(only my Madam Ji knows the password)</small></p>
+        <input class="pw-input" id="pwInput" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="enter password">
+        <div class="pw-error" id="pwError" aria-live="polite"></div>
+        <button class="pw-open" id="pwOpen">UNLOCK ♡</button>
+        <button class="pw-cancel" id="pwCancel">go back</button>
+      </div>
+    </div>
+    <section class="cake-page" id="cakePage" aria-hidden="true">
+      <div class="secret-top-label">🎂 MAKE A WISH 🎂</div>
+      <h2 class="cake-title">close your eyes… make a wish</h2>
+      <p class="cake-sub" id="cakeSub">tap the candles to blow them out 🕯️</p>
+      <svg class="cake-svg" viewBox="0 0 300 270" role="img" aria-label="Birthday cake with three candles">
+        <ellipse cx="150" cy="248" rx="128" ry="14" fill="#e9d3d8"/>
+        <ellipse cx="150" cy="242" rx="122" ry="12" fill="#fff6f1" stroke="#ecd6d6"/>
+        <rect x="42" y="168" width="216" height="72" rx="14" fill="#f6c9d6"/>
+        <path d="M42 182q14 18 27 0t27 0 27 0 27 0 27 0 27 0 27 0 27 0v-8a14 14 0 0 0-14-14H56a14 14 0 0 0-14 14z" fill="#fff6f1"/>
+        <circle cx="70" cy="214" r="5" fill="#d98aa2"/><circle cx="110" cy="222" r="5" fill="#fff6f1"/><circle cx="150" cy="212" r="5" fill="#d98aa2"/><circle cx="190" cy="222" r="5" fill="#fff6f1"/><circle cx="230" cy="214" r="5" fill="#d98aa2"/>
+        <rect x="76" y="108" width="148" height="66" rx="13" fill="#f2b3c5"/>
+        <path d="M76 122q12 16 24 0t24 0 24 0 24 0 24 0 28 0v-3a13 13 0 0 0-13-13H89a13 13 0 0 0-13 13z" fill="#fffaf5"/>
+        <text x="150" y="156" text-anchor="middle" font-family="Caveat,cursive" font-size="17" font-weight="700" fill="#a45570">Happy Birthday</text>
+        <g class="candle" data-i="0" tabindex="0" role="button" aria-label="Blow out candle 1"><rect x="96" y="58" width="12" height="52" rx="3" fill="#f7d9a6"/><rect x="96" y="70" width="12" height="6" fill="#e48fa7"/><rect x="96" y="84" width="12" height="6" fill="#e48fa7"/><g class="flame"><ellipse cx="102" cy="45" rx="8" ry="13" fill="#ffb347"/><ellipse cx="102" cy="48" rx="4.5" ry="8" fill="#fff1a8"/></g><circle class="smoke" cx="102" cy="44" r="4"/><rect x="82" y="22" width="40" height="88" fill="transparent"/></g>
+        <g class="candle" data-i="1" tabindex="0" role="button" aria-label="Blow out candle 2"><rect x="144" y="52" width="12" height="58" rx="3" fill="#f7d9a6"/><rect x="144" y="66" width="12" height="6" fill="#e48fa7"/><rect x="144" y="82" width="12" height="6" fill="#e48fa7"/><g class="flame"><ellipse cx="150" cy="39" rx="8" ry="13" fill="#ffb347"/><ellipse cx="150" cy="42" rx="4.5" ry="8" fill="#fff1a8"/></g><circle class="smoke" cx="150" cy="38" r="4"/><rect x="130" y="16" width="40" height="94" fill="transparent"/></g>
+        <g class="candle" data-i="2" tabindex="0" role="button" aria-label="Blow out candle 3"><rect x="192" y="58" width="12" height="52" rx="3" fill="#f7d9a6"/><rect x="192" y="70" width="12" height="6" fill="#e48fa7"/><rect x="192" y="84" width="12" height="6" fill="#e48fa7"/><g class="flame"><ellipse cx="198" cy="45" rx="8" ry="13" fill="#ffb347"/><ellipse cx="198" cy="48" rx="4.5" ry="8" fill="#fff1a8"/></g><circle class="smoke" cx="198" cy="44" r="4"/><rect x="178" y="22" width="40" height="88" fill="transparent"/></g>
+      </svg>
+      <button class="cake-mic" id="cakeMic">🎤 or blow into the mic</button>
+      <div class="cake-msg" id="cakeMsg" hidden>Yayyy! 🎉 Wish made, Madam Ji. I hope every single one comes true. 💗<br><small>now… there’s one last thing for you ♡</small></div>
+      <button class="cake-continue" id="cakeContinue" hidden>OPEN THE LAST THING ♡</button>
+      <button class="back-button cake-back" id="cakeBack">↶ back to wishes</button>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+    </section>
+    <section class="secret-letter-page" id="secretLetterPage" aria-hidden="true">
+      <div class="secret-top-label">♥ A LITTLE SOMETHING JUST FOR YOU ♥</div>
+      <button class="secret-more" id="secretMoreBtn">🔒 one more secret letter… ♡</button>
+      <div class="secret-stamp" aria-hidden="true">🐻<span>♡</span></div>
+      <h2 class="secret-heading">wait… your letter is hiding!</h2>
+      <p class="secret-intro">You thought you were done? hehe. Find the little button and tap it… if you can 😌</p>
+      <div class="secret-note" id="secretNote" aria-live="polite">Psst… start anywhere. I dare you ♡</div>
+      <button class="secret-tap-target" id="secretTapTarget">TAP ME ♡</button>
+      <div class="letter-stage">
+        <div class="letter-emoji-band emoji-top" aria-hidden="true">🎀　♡　🌸　✨　💗　🌷　♡　🎀</div>
+        <div class="letter-frame">
+      <div class="secret-letter-paper" id="secretLetterPaper" hidden>
+        <div class="secret-paper-flower flower-left">✿</div><div class="secret-paper-flower flower-right">✿</div>
+        <div class="secret-paper-label">✦ A LETTER, JUST FOR YOU ✦</div>
+        <div class="secret-avatar">🐻</div>
+        <h2>My Madam Ji,</h2>
+        <div class="secret-rule">﹏﹏﹏﹏﹏﹏﹏﹏ ♡ ﹏﹏﹏﹏﹏﹏﹏﹏</div>
+        <p>The way you make fun of me is something I could never really get upset about, because somewhere in my heart, I know it's you. 🥹💗 You're one of those people around whom I don't have to think twice before being myself. I can act silly, say the most random things, make a fool of myself, and even laugh at my own stupidity without feeling embarrassed. Because with you, I don't feel the need to be perfect or pretend to be someone I'm not.</p>
+        <p>I think that's one of my favourite things about you — the comfort you bring without even trying🥹. I can tease you, you can tease me, and somehow even the most random, stupid little moments become memories I end up cherishing. Maybe it sounds like such a small thing, but being able to laugh with someone, be a complete idiot around them, and still feel accepted is something really special to me.💗</p>
+        <p>So, awww bubu, never stop being the person with whom I can be this version of myself. The childish me, the dramatic me, the annoying me, and all the versions of me that not everyone gets to see. Because honestly, being this comfortable with you is a kind of happiness I wouldn't trade for anything. Alee mera cutipiee, you might annoy me, bully me, and make fun of me all day, but you're still one of my favourite people to be stupid with. Hehehe.🧸💗</p>
+        <p class="secret-signoff">with all my love, always ♡</p>
+      </div>
+          <div class="letter-decoration-layer" aria-hidden="true">
+                        <img class="letter-corner-photo corner-one" src="stickers/letter-decor-1.png" alt="">
+            <img class="letter-corner-photo corner-two" src="stickers/letter-decor-2.png" alt="">
+            <img class="letter-corner-photo corner-three" src="stickers/letter-decor-3.png" alt="">
+            <img class="letter-corner-photo corner-four" src="stickers/letter-decor-4.png" alt="">
+            <div class="letter-emoji-side emoji-left">🦋<br>✨<br>🌸<br>✨<br>🦋<br>♡<br>🌸<br>✨<br>🦋<br>♡<br>🌸<br>✨</div>
+            <div class="letter-emoji-side emoji-right">💗<br>🌷<br>🎀<br>💗<br>🌷<br>✨<br>♡🎀<br>💗<br>🌷<br>✨</div>
+          </div>
+        </div>
+        <div class="letter-emoji-band emoji-bottom" aria-hidden="true">🌷　💞　✨　🧸　♡　🌸　💗　✨</div>
+      </div>
+      <button class="back-button secret-back" id="secretLetterBack">↶ back to wishes</button>
+    </section>
+
+    <section class="secret-letter-page letter2-page revealed" id="secretLetter2Page" aria-hidden="true">
+      <div class="secret-top-label">🔒 THE REAL SECRET LETTER 🔒</div>
+      <div class="letter-stage">
+        <div class="letter-emoji-band emoji-top" aria-hidden="true">🎀　♡　🌸　✨　💗　🌷　♡　🎀</div>
+        <div class="letter-frame">
+          <div class="secret-letter-paper" id="secretLetter2Paper">
+            <div class="secret-paper-flower flower-left">✿</div><div class="secret-paper-flower flower-right">✿</div>
+            <div class="secret-paper-label">✦ ONLY FOR YOU ✦</div>
+            <div class="secret-avatar">🐻</div>
+            <h2>My Madam Ji,</h2>
+            <div class="secret-rule">﹏﹏﹏﹏﹏﹏﹏﹏ ♡ ﹏﹏﹏﹏﹏﹏﹏﹏</div>
+            <p>You found the secret letter. 🥹 This is the part I only wanted you to read.</p>
+            <p>in that secret letter write 
+Hiii buvuuuuuuu yayyyy bdyyy haii teraaaa i am so happyyy 😭😭😭21 saal ka hogya kya koi waaoo yrrr bde logzzz partyyyyyy dedenaaa milke hehehehehe….hmmm likhne ko kuch aa kyu nhi rhaaa jbb sirf sochra tha to bht kuch aara thaa haha…. too…..hmmm likhne ko i love you yrr so muchhhh huhh…hmm i am sorry my fuck upssss….hm
+Ik uk okayy just want to say u that..don’t be sad nigga udk kitni sundrr lgti hai tu jbb khush hoti hai…mai to esse poora  khush hojata hu tujhe khush dekh krr 😭wrna to behh rheta hu…hmmm u r the best niggga….hmm chrr bhai sbko haah roya mtt krr acha ni lgta hm and i am sorry…but hmm bht kuch sikhaya hai tune mujhee i am a better person only becoz of u thank you so muchh andd haan drta hu mai tujhseee😀😀😀😀glt hai kyaa nhii huhhh GUNDII khi ki…hmmm khush rhe bss abb aage ki life apni chrr prre ko sbko …but hm saath rhe haah….and u r whole society not a flat..:ifukuk 😀👉🏻👈🏻….huhhh cutieeee …enjoyy ur dayyy like helll…with u always….i miss you today but maybe haan tujhe acha lge ye dekh ke😀😀hehe kyuki mujhe to lggra…so it’s  a byeiii ig…hmmm love you byeiii🫶🏻(orr kuch aa nhi rha😭😭😭muahh muaahhh😘😘)</p>
+            <p class="secret-signoff">yours, always ♡</p>
+          </div>
+          <div class="letter-decoration-layer" aria-hidden="true">
+            <img class="letter-corner-photo corner-one" src="stickers/letter-decor-1.png" alt="">
+            <img class="letter-corner-photo corner-two" src="stickers/letter-decor-2.png" alt="">
+            <img class="letter-corner-photo corner-three" src="stickers/letter-decor-3.png" alt="">
+            <img class="letter-corner-photo corner-four" src="stickers/letter-decor-4.png" alt="">
+            <div class="letter-emoji-side emoji-left">♡<br>🌸<br>✨<br>🦋<br>♡</div>
+            <div class="letter-emoji-side emoji-right">🎀<br>💗<br>🌷<br>✨<br>♡</div>
+          </div>
+        </div>
+        <div class="letter-emoji-band emoji-bottom" aria-hidden="true">🌷　💞　✨　🧸　♡　🌸　💗　✨</div>
+      </div>
+      <button class="back-button secret-back" id="secretLetter2Back">↶ back to the first letter</button>
+    </section>
+
+    <div class="sparkle s1">✧</div><div class="sparkle s2">✦</div><div class="sparkle s3">✧</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
